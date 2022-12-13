@@ -27,14 +27,17 @@ def bubbleSort():
                 list[j] = list[j+1]
                 list[j+1] = temp
 
-    cpu1 = psutil.cpu_percent(interval=1)  
+    cpu1 = psutil.cpu_percent(interval=1)
+    # memoryUsage1 = psutil.virtual_memory().percent  
 
     end = time.time()
 
     cpu2 = psutil.cpu_percent(interval=1)  
+    # memoryUsage2 = psutil.virtual_memory().percent  
     # print(f"After Sorting: {list}")
 
     print(f"Time Take: {end-start} seconds")
-    print(f"CPU utilization: {cpu1}, {cpu2}")
+    print(f"CPU Utilization: {cpu1}, {cpu2}")
+    # print(f"Memory Utilization: {memoryUsage1}, {memoryUsage2}")
 
 bubbleSort()
