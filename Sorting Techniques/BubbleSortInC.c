@@ -50,5 +50,7 @@ int main() {
   printf("CPU utilization: %f%%\n", utilization);
   printf("time: %f\n", time_taken);
 
+  
+
   return 0;
 }

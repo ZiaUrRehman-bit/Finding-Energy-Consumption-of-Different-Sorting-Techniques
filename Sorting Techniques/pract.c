@@ -12,5 +12,6 @@ int main() {
 
   printf("Random number: %d\n", randomNumber);
 
+
   return 0;
 }
